@@ -1,0 +1,316 @@
+html,
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+:root {
+    --brown: #f7cd75;
+    --grey: #f2f2f2;
+    --white: #ffffff;
+    --lemon: #8ccf60;
+    --blue: #8b9ac8;
+    --darkgrey: #bebebe;
+    --black: #393939;
+    --darkblack: #333333;
+    --darkergrey: #7e7e7e;
+}
+main {
+    height: 100vh;
+    width: 90vw;
+    background-color: var(--brown);
+    margin: 0 5%;
+}
+.container {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    background-color: var(--white);
+    width: 65%;
+    height: 65vh;
+    margin: auto;
+}
+.fixed {
+    position: fixed;
+    width: 20%;
+    background-color: var(--grey);
+    height: 65vh;
+    padding: 0 1em;
+    overflow: scroll;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    color: var(--darkergrey);
+}
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    margin-top: 0;
+}
+.fixed-header-span {
+    font-size: 30px;
+    margin-top: -0.5em;
+    font-weight: bolder;
+}
+.box img {
+    width: 60px;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.box {
+    width: 14em;
+    height: 8em;
+    background-color: var(--white);
+    margin: 1em auto;
+    border-radius: 5px;
+    padding-left: 1em;
+}
+.box:hover {
+    border: 2px blue solid;
+}
+.box p {
+    color: var(--darkergrey);
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5em;
+    font-size: 18px;
+}
+.box .p2 {
+    font-size: 15px;
+}
+
+.aside {
+    padding: 0 5%;
+    height: 65vh;
+    margin-left: 35%;
+    margin-top: 0;
+    overflow-y: scroll;
+}
+.aside .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex .price {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.flex .price .amount {
+    font-weight: bolder;
+    align-self: flex-start;
+}
+.aside h2 {
+    margin-top: 1em;
+}
+hr {
+    color: var(--grey);
+    height: 0.5px;
+}
+.aside .flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2 img {
+    border-radius: 50%;
+    border: 0.1px var(--darkgrey) solid;
+    width: 20px;
+    margin-top: 2em;
+}
+.flex2 h3 {
+    color: var(--darkblack);
+}
+.flex2 p {
+    color: var(--darkergrey);
+    margin-top: -1em;
+}
+.flex2 .blue {
+    color: var(--blue);
+    font-weight: bolder;
+    margin-top: 2em;
+}
+.flex2 .lemon {
+    color: var(--lemon);
+    font-weight: bolder;
+    margin-top: 2em;
+}
+.flex2 .apple {
+    margin-left: -4em;
+}
+.flex2 .fund {
+    margin-left: -7em;
+}
+.flex2 .energy {
+    margin-left: -6em;
+}
+.flex2 .eye {
+    margin-left: -3em;
+}
+
+.flex2 .food {
+    margin-left: -8em;
+}
+.flex2 .Station {
+    margin-left: -7em;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .box {
+        width: 11em;
+        height: 8em;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .aside p {
+        font-size: 10px;
+    }
+
+    .flex2 .Station,
+    .flex2 .food,
+    .flex2 .eye,
+    .flex2 .energy,
+    .flex2 .fund,
+    .flex2 .apple {
+        margin-left: 2em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .box {
+        width: 8em;
+        height: 5em;
+    }
+    .box p {
+        font-size: 10px;
+    }
+    .box .p2 {
+        font-size: 8px;
+    }
+    h2,
+    .fixed-header-span,
+    .flex .price {
+        font-size: 15px;
+    }
+    .box img {
+        margin-top: -0.5em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .box {
+        width: 6em;
+    }
+    .box img {
+        width: 30px;
+        margin-top: 0.5em;
+    }
+    h3 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    h2,
+    .fixed-header-span,
+    .flex .price {
+        font-size: 10px;
+    }
+    .aside {
+        margin-left: 38%;
+    }
+    .flex2 img {
+        width: 10px;
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    .aside p {
+        font-size: 6px;
+    }
+
+    .flex2 .Station,
+    .flex2 .food,
+    .flex2 .eye,
+    .flex2 .energy,
+    .flex2 .fund,
+    .flex2 .apple {
+        margin-left: -1em;
+    }
+    .container {
+        height: 40vh;
+    }
+    .fixed {
+        height: 40vh;
+    }
+    .aside {
+        height: 40vh;
+    }
+    .box .p2 {
+        font-size: 5px;
+    }
+    .box p {
+        font-size: 6px;
+    }
+    .box {
+        width: 5em;
+        height: 5em;
+    }
+}
+@media screen and (max-width: 500px) {
+    h3 {
+        font-size: 5px;
+    }
+    .aside p {
+        font-size: 3px;
+    }
+
+    .box {
+        width: 3em;
+        height: 3em;
+    }
+    .box .p2 {
+        font-size: 3px;
+        margin-left: -5px;
+    }
+    .box p {
+        font-size: 4px;
+        margin-left: -5px;
+    }
+    .box img {
+        width: 20px;
+        margin-left: -5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    h2,
+    .aside .price {
+        font-size: 8px;
+    }
+    .aside {
+        margin-left: 45%;
+    }
+    .flex2 img {
+        width: 3px;
+        margin-top: -2em;
+    }
+    .flex2 .span {
+        margin-left: 1em;
+    }
+}
